@@ -1,0 +1,148 @@
+.navigation {
+  background-color: #fff;
+
+  img {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000;
+  }
+
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0 30px;
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+    }
+
+    &__list {
+      display: flex;
+      flex-grow: 0.6;
+      justify-content: flex-end;
+    }
+
+    &__link {
+      padding: 5px 25px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16.88px;
+      color: #383e5e;
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      small {
+        margin-left: 15px;
+        font-weight: 400;
+        font-size: 11px;
+        letter-spacing: 1.76px;
+        text-transform: uppercase;
+        color: #b7bbe2;
+      }
+
+      .tel {
+        margin-top: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.2px;
+        color: #1d337e;
+      }
+    }
+  }
+
+  &-bottom {
+    padding: 3px 0;
+    background-color: #334da6;
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-list {
+      display: flex;
+    }
+
+    &__link {
+      padding: 5px 25px;
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 1.92px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    .search {
+      display: flex;
+      align-items: center;
+
+      input {
+        border: none;
+        padding: 2px 6px;
+        width: 60px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16.88px;
+        color: #aabeff;
+        background: none;
+
+        &::placeholder {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 16.88px;
+          color: #aabeff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .navigation-top {
+    flex-direction: column;
+  }
+
+  .navigation-bottom {
+    padding-bottom: 10px;
+
+    &-wrapper {
+      flex-direction: column;
+
+      .search {
+        display: none;
+      }
+
+      button {
+        order: 3;
+      }
+    }
+
+    &-list {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-top {
+    flex-direction: column;
+
+    &__list {
+      margin-bottom: 20px;
+    }
+
+    &-wrapper {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.services {
+  padding: 120px 0;
+  background-color: #1d337e;
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+      margin-top: 50px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26.25px;
+      color: #aabeff;
+    }
+  }
+
+  &-bottom {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      z-index: -1;
+      width: 390px;
+      height: 100%;
+      background-image: url("../img/services-before2.png");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      z-index: -1;
+      width: 390px;
+      height: 100%;
+      background-image: url("../img/services-before1.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #334da6;
+    padding: 35px 25px 25px 30px;
+    width: 33.3%;
+    height: 220px;
+    background-color: #1d337e;
+
+    &-wrapper {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    &-name {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17.98px;
+      letter-spacing: 2.08px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+}

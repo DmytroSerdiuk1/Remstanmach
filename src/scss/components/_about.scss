@@ -1,0 +1,40 @@
+.about {
+  padding: 120px 0;
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    padding-top: 90px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1.92px;
+    text-transform: uppercase;
+    color: #334da6;
+  }
+
+  &-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 60px;
+    width: 470px;
+    height: 470px;
+    background-color: #111b51;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -15px;
+      top: 15px;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background-image: url("../img/before-about.svg");
+    }
+  }
+}

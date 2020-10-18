@@ -1,0 +1,39 @@
+.supply {
+  padding: 120px 0;
+  background-color: #fff;
+
+  &-wrapper {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+
+  &-slider {
+    overflow-x: hidden;
+  }
+
+  &-nav {
+    position: absolute;
+    right: 0;
+    top: -80px;
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+  }
+
+  &-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e4e8f4;
+    padding: 34px 24px 24px;
+    height: 220px;
+
+    &__text {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 22.97px;
+      color: #686c90;
+    }
+  }
+}

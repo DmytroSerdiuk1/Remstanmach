@@ -1,0 +1,40 @@
+.catalog {
+  margin-bottom: -217px;
+  transform: translateY(-220px);
+
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e4e8f4;
+    border-right: none;
+    padding: 26px 25px 25px 30px;
+    width: 33.3%;
+    background: #fff;
+
+    &-name {
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 17.98px;
+      letter-spacing: 2.08px;
+      text-transform: uppercase;
+      color: #383e5e;
+    }
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px;
+    }
+
+    &:nth-child(3) {
+      border: 1px solid #e4e8f4;
+    }
+  }
+}
