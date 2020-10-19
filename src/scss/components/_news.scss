@@ -41,3 +41,11 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .news {
+    &-wrapper {
+      flex-direction: column;
+    }
+  }
+}

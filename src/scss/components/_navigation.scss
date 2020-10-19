@@ -146,3 +146,34 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .navigation-top {
+    flex-direction: column;
+
+    &__list {
+      display: none;
+    }
+  }
+
+  .navigation-bottom {
+    padding-bottom: 10px;
+
+    &-wrapper {
+      flex-direction: column;
+      padding-top: 4px;
+
+      .search {
+        display: none;
+      }
+
+      button {
+        order: 3;
+      }
+    }
+
+    &-list {
+      display: none;
+    }
+  }
+}

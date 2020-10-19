@@ -38,3 +38,20 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .about {
+    &-wrapper {
+      flex-direction: column;
+    }
+
+    &-block {
+      margin-top: 50px;
+      width: 100%;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

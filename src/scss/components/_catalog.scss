@@ -38,3 +38,11 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .catalog {
+    &__item {
+      width: 100%;
+    }
+  }
+}

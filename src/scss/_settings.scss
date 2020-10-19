@@ -28,6 +28,7 @@ li {
 }
 
 body {
+  overflow-x: hidden;
   background-color: #f3f5f6;
 }
 
@@ -95,5 +96,29 @@ h1 {
 
   &_center {
     text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .section-small {
+    br {
+      display: none;
+    }
+  }
+
+  .section-title {
+    font-size: 30px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .section-subtitle {
+    font-size: 17px;
+
+    br {
+      display: none;
+    }
   }
 }
