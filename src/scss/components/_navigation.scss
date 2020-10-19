@@ -87,7 +87,7 @@
 
       input {
         border: none;
-        padding: 2px 6px;
+        margin-right: 10px;
         width: 60px;
         font-weight: 400;
         font-size: 16px;
@@ -151,7 +151,7 @@
   .navigation-top {
     flex-direction: column;
 
-    &__list {
+    &-wrapper {
       display: none;
     }
   }
