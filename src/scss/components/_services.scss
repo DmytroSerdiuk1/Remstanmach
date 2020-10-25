@@ -86,6 +86,10 @@
       &::before {
         display: none;
       }
+
+      &::after {
+        display: none;
+      }
     }
 
     &__item {

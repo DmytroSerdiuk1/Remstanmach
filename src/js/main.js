@@ -1,9 +1,10 @@
+import Swiper, {
+    Navigation,
+    Pagination
+} from 'swiper';
+Swiper.use([Navigation, Pagination]);
+
 window.addEventListener("DOMContentLoaded", ()=> {
-    import Swiper, {
-        Navigation,
-        Pagination
-    } from 'swiper';
-    Swiper.use([Navigation, Pagination]);
     new Swiper('.supply-slider', {
     
         breakpoints: {
