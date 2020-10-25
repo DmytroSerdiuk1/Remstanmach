@@ -1,0 +1,155 @@
+.modal-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  padding-top: 205px;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+
+  &_active {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.288);
+    opacity: 100;
+    visibility: visible;
+  }
+
+  &-lists {
+    position: relative;
+    padding: 34px 33px 34px 20px;
+    width: 390px;
+    background-color: #fff;
+  }
+
+  &__item {
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17.98px;
+    letter-spacing: 2.08px;
+    text-transform: uppercase;
+    color: #383e5e;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 17.98px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #383e5e;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        margin-right: 14px;
+        width: 15px;
+        height: 15px;
+        background-image: url("../img/plus.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: ease-in 0.1s;
+      }
+
+      &_active {
+        color: #334da6;
+
+        &::before {
+          content: "";
+          width: 21px;
+          height: 15px;
+          background-image: url("../img/arrow-menu.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          transition: ease-in 0.1s;
+        }
+      }
+
+      &:hover {
+        color: #334da6;
+        transition: ease-in 0.5s;
+      }
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &-sublist {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 32px 30px;
+    padding-bottom: 40px;
+    width: 380px;
+    min-height: 100%;
+    background-color: rgba(228, 232, 244, 0.808);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: ease 1s;
+
+    &__close {
+      display: none;
+    }
+
+    &_active {
+      opacity: 100;
+      visibility: visible;
+      transition: ease 1s;
+    }
+
+    li {
+      margin-top: 22px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &-subitem {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: normal;
+    text-transform: initial;
+    color: #383e5e;
+
+    &:hover {
+      color: #334da6;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .modal-menu {
+    &-lists {
+      width: 100%;
+    }
+
+    &-sublist {
+      left: 0;
+      width: 100%;
+      min-height: 100%;
+      background-color: #e4e8f4;
+      transform: translateX(0);
+      transition: ease 0.1s;
+
+      &__close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: block;
+        width: 25px;
+        height: 18px;
+        background-image: url("../img/arrow-menu.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
